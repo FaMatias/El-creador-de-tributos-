@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.jdh-creator, .marginal-gallery, #jdh-ficha, #marginal-ficha {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    width: 100%;
+}
+
+.personaje {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.personaje:hover {
+    transform: scale(1.05);
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+#jdh-image, #marginal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
