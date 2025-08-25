@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitios Temáticos de Series</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <label for="lang-select">Idioma:</label>
+            <select id="lang-select">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <h1 id="main-title">Sitios Temáticos de Series</h1>
+    </header>
+
+    <main>
+        <section id="juegos-del-hambre-site">
+            <h2 id="jdh-title"></h2>
+            <p id="jdh-subtitle"></p>
+            <div class="site-container">
+                <div class="jdh-creator">
+                    <h3 id="jdh-creator-title"></h3>
+                    <label for="jdh-select" id="jdh-label"></label>
+                    <select id="jdh-select"></select>
+                    <button id="jdh-generate-btn"></button>
+                </div>
+                <div id="jdh-ficha" class="hidden">
+                    <h4 id="jdh-ficha-title"></h4>
+                    <img id="jdh-image" src="" alt="Tributo">
+                    <p><strong><span id="jdh-ficha-name-label"></span>:</strong> <span id="jdh-ficha-name"></span></p>
+                    <p><strong><span id="jdh-ficha-district-label"></span>:</strong> <span id="jdh-ficha-district"></span></p>
+                    <p><strong><span id="jdh-ficha-skill-label"></span>:</strong> <span id="jdh-ficha-skill"></span></p>
+                    <p><strong><span id="jdh-ficha-weapon-label"></span>:</strong> <span id="jdh-ficha-weapon"></span></p>
+                    <p><strong><span id="jdh-ficha-strategy-label"></span>:</strong> <span id="jdh-ficha-strategy"></span></p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section id="el-marginal-site">
+            <h2 id="marginal-title"></h2>
+            <p id="marginal-subtitle"></p>
+            <div class="site-container">
+                <div class="marginal-gallery">
+                    <h3 id="marginal-gallery-title"></h3>
+                    <div class="characters-grid" id="marginal-characters">
+                        </div>
+                </div>
+                <div id="marginal-ficha" class="hidden">
+                    <h4 id="marginal-ficha-name"></h4>
+                    <img id="marginal-image" src="" alt="Personaje">
+                    <p><strong><span id="marginal-ficha-alias-label"></span>:</strong> <span id="marginal-ficha-alias"></span></p>
+                    <p><strong><span id="marginal-ficha-crime-label"></span>:</strong> <span id="marginal-ficha-crime"></span></p>
+                    <p><strong><span id="marginal-ficha-status-label"></span>:</strong> <span id="marginal-ficha-status"></span></p>
+                    <p id="marginal-ficha-bio"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
